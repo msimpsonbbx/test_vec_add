@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<openclProject:OpenCLProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:openclProject="http://www.xilinx.com/openclproject" name="test_vec_2" location="/home/work2/Documents/zcu104/dump/aws_test/test_vec_2" platform="/tools/Xilinx/Vitis/2020.1/platforms/xilinx_zcu104_base_202010_1/xilinx_zcu104_base_202010_1.xpfm" platformUID="xilinx:zcu104:zcu104_base:1.0" systemProject="test_vec_2_system" sysConfig="xilinx_zcu104_base_202010_1" cpu="xrt" cpuInstance="cortex-a53" os="linux">
+  <configuration name="Emulation-SW" id="com.xilinx.accelerated.config.sw_emu.aarch64.651925080" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="binary_container_1">
+        <kernels name="krnl_vadd" sourceFile="src/krnl_vadd.cpp">
+          <computeUnits name="krnl_vadd_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.accelerated.config.hw_emu.aarch64.1561410095" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
+      <binaryContainers name="binary_container_1">
+        <kernels name="krnl_vadd" sourceFile="src/krnl_vadd.cpp">
+          <computeUnits name="krnl_vadd_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.accelerated.config.hw.aarch64.162889531" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" target="hw">
+      <binaryContainers name="binary_container_1">
+        <kernels name="krnl_vadd" sourceFile="src/krnl_vadd.cpp">
+          <computeUnits name="krnl_vadd_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+</openclProject:OpenCLProject>
