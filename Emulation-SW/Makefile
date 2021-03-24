@@ -41,7 +41,7 @@ ALL_MESSAGE_FILES = $(subst .xo,.mdb,$(ALL_KERNEL_OBJS)) $(subst .xclbin,.mdb,$(
 
 HOST_OBJECTS += src/vadd.o
 
-HOST_EXE = test_vec
+HOST_EXE = test_vec_2
 
 BUILD_SUBDIRS += src/
 
